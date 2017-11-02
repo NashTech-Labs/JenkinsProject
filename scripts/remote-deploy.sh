@@ -8,10 +8,10 @@ IMAGE_TAG="latest"
 
 ACTIVE_PORT="9000"
 
-docker stop $CONTAINER_NAME || echo "Container already stopped"
+sudo docker stop $CONTAINER_NAME || echo "Container already stopped"
 
-docker rm -f $CONTAINER_NAME || echo "Container already removed"
+sudo docker rm -f $CONTAINER_NAME || echo "Container already removed"
 
-docker pull $IMAGE_NAME:$IMAGE_TAG
+sudo docker pull $IMAGE_NAME:$IMAGE_TAG
 
-docker run -d --name $CONTAINER_NAME -p $ACTIVE_PORT:$ACTIVE_PORT $IMAGE_NAME:$IMAGE_TAG
+sudo docker run -d --name $CONTAINER_NAME -p $ACTIVE_PORT:$ACTIVE_PORT $IMAGE_NAME:$IMAGE_TAG
