@@ -11,15 +11,15 @@ pipeline {
 			sh 'scripts/build.sh'
 			}
 		}
-		stage('Build and Push docker image') {
+		#stage('Build and Push docker image') {
+		#	steps{
+		#	sh 'scripts/build-docker.sh'
+		#	}
+		#}
+		stage('Deploy Application') {
 			steps{
-			sh 'scripts/build-docker.sh'
+			sh 'scripts/deploy.sh'
 			}
 		}
-		//stage('Deploy Application') {
-		//	steps{
-		//	sh 'scripts/build.sh'
-		//	}
-		//}
 	}
 }

@@ -1,12 +1,12 @@
 #! /bin/bash
 
-USER_NAME=akhilvijayan05
+USER_NAME="akhilvijayan05"
 
-PASSWORD=lihkavij
+PASSWORD="lihkavij"
 
-IMAGE_NAME=playdemo
+IMAGE_NAME="play_image"
 
-IMAGE_TAG=latest
+IMAGE_TAG="latest"
 
 docker login -u $USER_NAME -p $PASSWORD 
 
