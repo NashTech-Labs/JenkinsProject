@@ -16,7 +16,7 @@ sudo docker stop $CONTAINER_NAME || echo "Container already stopped"
 
 sudo docker rm -f $CONTAINER_NAME || echo "Container already removed"
 
-docker login -u $USER_NAME -p $PASSWORD 
+sudo docker login -u $USER_NAME -p $PASSWORD 
 
 sudo docker pull $USER_NAME/$IMAGE_NAME:$IMAGE_TAG
 
