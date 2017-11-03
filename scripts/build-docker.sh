@@ -2,7 +2,7 @@
 
 USER_NAME="akhilvijayan05"
 
-PASSWORD="lihkavij"
+PASSWORD="123456"
 
 IMAGE_NAME="play_image"
 
